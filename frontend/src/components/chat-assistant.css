@@ -1,0 +1,86 @@
+.chat-assistant {
+  background: var(--guild-white);
+  border-radius: 24px;
+  padding: 2.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  display: grid;
+  gap: 1.5rem;
+}
+
+.chat-window {
+  max-height: 320px;
+  overflow-y: auto;
+  display: grid;
+  gap: 1rem;
+  padding-right: 0.5rem;
+}
+
+.chat-message {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.chat-message--guide {
+  justify-items: start;
+}
+
+.chat-message--visitor {
+  justify-items: end;
+}
+
+.chat-message__label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(44, 44, 44, 0.7);
+}
+
+.chat-message p {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  border-radius: 18px;
+  background: rgba(181, 18, 27, 0.12);
+}
+
+.chat-message--guide p {
+  background: rgba(181, 18, 27, 0.1);
+}
+
+.chat-message--visitor p {
+  background: rgba(201, 162, 39, 0.2);
+}
+
+.chat-form {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.chat-form input {
+  flex: 1 1 auto;
+  border-radius: 999px;
+  border: 1px solid rgba(44, 44, 44, 0.15);
+  padding: 0.75rem 1rem;
+}
+
+.chat-form button {
+  background: var(--guild-red);
+  color: var(--guild-white);
+  border-radius: 999px;
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+}
+
+.chat-form button:hover {
+  background: var(--guild-red-dark);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

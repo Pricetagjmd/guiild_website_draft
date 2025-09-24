@@ -1,0 +1,187 @@
+.site-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.5rem 3vw;
+  background: linear-gradient(135deg, var(--guild-red), var(--guild-red-dark));
+  color: var(--guild-white);
+}
+
+.site-header__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brand-mark {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 999px;
+  background-color: var(--guild-white);
+  color: var(--guild-red);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125rem;
+}
+
+.brand-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.brand-subtitle {
+  font-size: 0.85rem;
+  margin: 0;
+  opacity: 0.85;
+}
+
+.site-header__search {
+  grid-row: span 2;
+  justify-self: end;
+}
+
+.site-header__search input {
+  padding: 0.55rem 0.85rem;
+  border-radius: 999px;
+  border: none;
+  min-width: 240px;
+}
+
+.site-header__nav {
+  grid-column: 1 / span 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.nav-link {
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  transition: background 0.3s ease;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.nav-link--active {
+  background: var(--guild-white);
+  color: var(--guild-red);
+}
+
+.layout main {
+  padding: 2rem 3vw;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+@media (max-width: 900px) {
+  .site-header {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .site-header__search {
+    justify-self: stretch;
+  }
+
+  .site-header__search input {
+    width: 100%;
+  }
+
+  .site-header__nav {
+    grid-column: 1;
+  }
+}
+
+.site-footer {
+  background: var(--guild-charcoal);
+  color: var(--guild-white);
+  padding: 3rem 3vw;
+  display: grid;
+  gap: 2rem;
+  transform: translateY(40px);
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.site-footer--visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.site-footer h3 {
+  margin: 0 0 0.5rem;
+}
+
+.site-footer__socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.site-footer__socials a {
+  background: var(--guild-red);
+  color: var(--guild-white);
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  transition: background 0.3s ease;
+}
+
+.site-footer__socials a:hover {
+  background: var(--guild-red-dark);
+}
+
+.site-footer__meta {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.site-footer__tagline {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 600px) {
+  .site-footer {
+    padding-bottom: 5rem;
+  }
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--guild-gold);
+  color: var(--guild-charcoal);
+  padding: 0.75rem 0.9rem;
+  border-radius: 999px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  font-size: 1.2rem;
+  z-index: 1000;
+}
+
+.back-to-top:hover {
+  background: var(--guild-red);
+  color: var(--guild-white);
+}
+
+@media (max-width: 600px) {
+  .back-to-top {
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+}

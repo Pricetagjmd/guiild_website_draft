@@ -1,0 +1,51 @@
+.placeholder {
+  background: var(--guild-white);
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.placeholder h1 {
+  margin-bottom: 1rem;
+}
+
+.page-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.view-toggle {
+  display: inline-flex;
+  background: rgba(181, 18, 27, 0.1);
+  padding: 0.4rem;
+  border-radius: 999px;
+  gap: 0.4rem;
+  margin-top: 1.5rem;
+}
+
+.view-toggle__button {
+  background: transparent;
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  color: var(--guild-red-dark);
+}
+
+.view-toggle__button--active {
+  background: var(--guild-white);
+  color: var(--guild-red);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.event-lists {
+  display: grid;
+  gap: 2rem;
+}

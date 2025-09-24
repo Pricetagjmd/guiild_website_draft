@@ -1,0 +1,26 @@
+:root {
+  --guild-red: #b5121b;
+  --guild-red-dark: #7d0d13;
+  --guild-white: #ffffff;
+  --guild-charcoal: #2c2c2c;
+  --guild-sand: #f4efe6;
+  --guild-gold: #c9a227;
+  --guild-sky: #4fa3d9;
+  --guild-forest: #2e8540;
+}
+
+body {
+  background-color: var(--guild-sand);
+  color: var(--guild-charcoal);
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
