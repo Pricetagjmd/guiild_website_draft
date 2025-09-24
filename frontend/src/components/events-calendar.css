@@ -1,0 +1,83 @@
+.events-calendar {
+  background: var(--guild-white);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  display: grid;
+  gap: 1.5rem;
+}
+
+.events-calendar__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.events-calendar__header button {
+  background: rgba(181, 18, 27, 0.15);
+  color: var(--guild-red-dark);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+.events-calendar__grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.weekday {
+  text-align: center;
+  font-weight: 600;
+  color: rgba(44, 44, 44, 0.6);
+}
+
+.calendar-cell {
+  min-height: 110px;
+  background: rgba(181, 18, 27, 0.05);
+  border-radius: 16px;
+  padding: 0.75rem;
+  display: grid;
+  gap: 0.5rem;
+  align-content: start;
+}
+
+.calendar-cell--active {
+  background: rgba(201, 162, 39, 0.15);
+  border: 1px solid rgba(201, 162, 39, 0.4);
+}
+
+.calendar-cell__date {
+  font-weight: 600;
+}
+
+.calendar-cell button {
+  width: 100%;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  padding: 0.35rem 0.5rem;
+  font-size: 0.85rem;
+}
+
+.calendar-cell button:hover {
+  background: var(--guild-red);
+  color: var(--guild-white);
+}
+
+@media (max-width: 900px) {
+  .events-calendar__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .weekday {
+    display: none;
+  }
+
+  .calendar-cell {
+    min-height: auto;
+  }
+}

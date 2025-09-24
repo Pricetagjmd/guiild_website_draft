@@ -1,0 +1,89 @@
+.vault {
+  gap: 2.5rem;
+}
+
+.vault__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.vault__filter {
+  background: rgba(181, 18, 27, 0.1);
+  color: var(--guild-red-dark);
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+}
+
+.vault__filter--active {
+  background: var(--guild-red);
+  color: var(--guild-white);
+}
+
+.vault__timeline {
+  display: grid;
+  gap: 1.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.vault__timeline::before {
+  content: '';
+  position: absolute;
+  left: 0.5rem;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(var(--guild-red), var(--guild-gold));
+  border-radius: 999px;
+}
+
+.vault__card {
+  background: var(--guild-white);
+  border-radius: 20px;
+  padding: 1.75rem;
+  display: grid;
+  gap: 0.75rem;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.1);
+}
+
+.vault__year {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--guild-red);
+}
+
+.vault__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0;
+}
+
+.vault__tags li {
+  background: rgba(79, 163, 217, 0.2);
+  color: var(--guild-sky);
+  border-radius: 999px;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.85rem;
+}
+
+.vault__cta {
+  background: rgba(46, 133, 64, 0.15);
+  border-radius: 24px;
+  padding: 2rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.vault__cta button {
+  justify-self: start;
+  background: var(--guild-forest);
+  color: var(--guild-white);
+  border-radius: 999px;
+  padding: 0.6rem 1.2rem;
+}
+
+.vault__cta button:hover {
+  background: #236734;
+}

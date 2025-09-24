@@ -1,0 +1,92 @@
+.event-list {
+  background: var(--guild-white);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+  display: grid;
+  gap: 1.5rem;
+}
+
+.event-list header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.event-list__count {
+  color: rgba(44, 44, 44, 0.6);
+  font-size: 0.85rem;
+}
+
+.event-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  border-radius: 18px;
+  background: rgba(181, 18, 27, 0.06);
+}
+
+.event-card__date {
+  display: grid;
+  gap: 0.25rem;
+  justify-items: center;
+  padding: 0.75rem;
+  background: var(--guild-white);
+  border-radius: 16px;
+  min-width: 70px;
+}
+
+.event-card__day {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.event-card__month {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
+}
+
+.event-card__content {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.event-card__meta {
+  font-weight: 500;
+  color: rgba(44, 44, 44, 0.7);
+}
+
+.event-card__price {
+  font-weight: 600;
+  color: var(--guild-red);
+}
+
+.event-card button {
+  justify-self: start;
+  background: var(--guild-red);
+  color: var(--guild-white);
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+}
+
+.event-card button:hover {
+  background: var(--guild-red-dark);
+}
+
+.event-list__empty {
+  text-align: center;
+  color: rgba(44, 44, 44, 0.7);
+}
+
+@media (max-width: 700px) {
+  .event-card {
+    grid-template-columns: 1fr;
+  }
+
+  .event-card__date {
+    justify-self: start;
+    flex-direction: row;
+  }
+}
